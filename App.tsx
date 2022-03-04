@@ -8,15 +8,14 @@ import * as eva from "@eva-design/eva";
 export default function App() {
   return (
     <>
+      <IconRegistry icons={EvaIconsPack} />
       <ApplicationProvider {...eva} theme={eva.light}>
-        <IconRegistry icons={EvaIconsPack}>
-          <NavigationContainer>
-            <View style={styles.container}>
-              <Text>Open up App.tsx to start working on your app!</Text>
-              <StatusBar style="auto" />
-            </View>
-          </NavigationContainer>
-        </IconRegistry>
+        <NavigationContainer>
+          <View style={styles.container}>
+            <Text>Open up App.tsx to start working on your app!</Text>
+            <StatusBar style="auto" />
+          </View>
+        </NavigationContainer>
       </ApplicationProvider>
     </>
   );
