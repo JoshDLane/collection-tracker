@@ -7,9 +7,9 @@ interface HomesScreenProps {
 }
 export type React$Node = JSX.Element | null;
 // export function HomeScreen ({navigation}: HomesScreenProps): React.FC<HomesScreenProps> {
-export const HomeScreen: (props: HomesScreenProps) => React$Node = ({
+export default function HomeScreen({
   navigation,
-}): React$Node => {
+}: HomesScreenProps): React$Node {
   const navigateDetails = () => {
     navigation.navigate("Details");
   };
@@ -25,4 +25,4 @@ export const HomeScreen: (props: HomesScreenProps) => React$Node = ({
       </Layout> */}
     </SafeAreaView>
   );
-};
+}
