@@ -8,12 +8,15 @@ import {
   TopNavigation,
   TopNavigationAction,
 } from "@ui-kitten/components";
+import { React$Node } from "../../utils";
 
 const BackIcon = (props: any) => <Icon {...props} name="arrow-back" />;
 interface DetailsScreenProps {
   navigation: any;
 }
-export default function DetailsScreen({ navigation }: DetailsScreenProps) {
+export default function DetailsScreen({
+  navigation,
+}: DetailsScreenProps): React$Node {
   const navigateBack = () => {
     navigation.goBack();
   };

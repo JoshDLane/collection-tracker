@@ -1,11 +1,12 @@
 import React from "react";
 import { SafeAreaView, View } from "react-native";
 import { Button, Divider, Layout, TopNavigation } from "@ui-kitten/components";
+import { React$Node } from "../../utils";
 
 // interface HomesScreenProps {
 //   navigation: any;
 // }
-export type React$Node = JSX.Element | null;
+
 export default function HomeScreen(): React$Node {
   // const navigateDetails = () => {
   //   navigation.navigate("Details");
