@@ -2,17 +2,14 @@ import React from "react";
 import { SafeAreaView, View } from "react-native";
 import { Button, Divider, Layout, TopNavigation } from "@ui-kitten/components";
 
-interface HomesScreenProps {
-  navigation: any;
-}
+// interface HomesScreenProps {
+//   navigation: any;
+// }
 export type React$Node = JSX.Element | null;
-// export function HomeScreen ({navigation}: HomesScreenProps): React.FC<HomesScreenProps> {
-export default function HomeScreen({
-  navigation,
-}: HomesScreenProps): React$Node {
-  const navigateDetails = () => {
-    navigation.navigate("Details");
-  };
+export default function HomeScreen(): React$Node {
+  // const navigateDetails = () => {
+  //   navigation.navigate("Details");
+  // };
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View>
